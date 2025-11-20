@@ -1,5 +1,8 @@
 <h2>Por Capital</h2>
 <hr>
+<!--
+  <input [value]="initialValue"
+-->
 
 <div class="row">
   <div class="col">
@@ -7,8 +10,9 @@
     <!-- (onValue)="searchByCapital($event)" -->
 
     <shared-search-box
-      placeholder="Buscar por capital"
-      (onDebounce)="searchByCapital($event)"
+    (onDebounce)="searchByCapital($event)"
+    placeholder="Buscar por capital"
+    [initialValue2] = "initialValue"
     ></shared-search-box>
 
   </div>
